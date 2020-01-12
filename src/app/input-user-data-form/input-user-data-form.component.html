@@ -1,0 +1,36 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+	<div class="form-group">
+		<label for="title" class="control-label">Title</label>
+		<input type="text" class="form-control" id="title" name="title" placeholder="Book title">
+	</div>
+
+	<div class="form-group">
+		<label for="author" class="control-label">Author</label>
+		<input type="text" class="form-control" id="author" name="author" placeholder="Book author">
+	</div>
+
+	<div class="form-group">
+		<label for="year" class="control-label">Year</label>
+		<input type="text" class="form-control" id="year" name="year" placeholder="2020">
+	</div>
+							
+	<div class="form-group">
+		<label for="description" class="control-label">Description</label>
+		<input type="text" class="form-control" id="description" name="description" placeholder="Book description">
+	</div>
+	
+	<div class="form-group">
+		<label for="genres" class="control-label">Genres</label>
+		<input type="text" class="form-control" id="genres" name="genres" placeholder="Fiction">
+	</div>
+	
+	<div class="form-group">
+	    <label for="rating" class="control-label">Rating(out of 5)</label>
+	    <input type="text" class="form-control" id="rating" name="rating" placeholder="5">
+	</div>
+	
+	<div class="form-group"> <!-- Register Button -->
+		<button type="submit" class="btn btn-primary">Register book</button>
+	</div>
+
+</form>	
